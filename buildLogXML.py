@@ -3,8 +3,8 @@ import sys
 import re
 
 
-input_file_path = r'C:/Users/twink/Desktop/Python_Jenkins_assignment/buildLog.txt'
-output_file_path = r'C:/Users/twink/Desktop/Python_Jenkins_assignment/buildLogXML.xml'
+input_file_path = sys.argv[1]
+output_file_path = sys.argv[2]
 
 
 def main():

@@ -5,9 +5,9 @@ import os
 from lxml import etree
 import GetFileName as filename
 
-XSLPATH = r'C://Users/twink/Desktop/Python_Jenkins_assignment/buildLogXSL.xsl'
-XMLPATH = r'C://Users/twink/Desktop/Python_Jenkins_assignment/buildLogXML.xml'
-HTMLFOLDERPATH = r'C://Users/twink/Desktop/Python_Jenkins_assignment/'
+XSLPATH = sys.argv[1]
+XMLPATH = sys.argv[2]
+HTMLFOLDERPATH = sys.argv[3]
 
 HTMLPATH = HTMLFOLDERPATH+'\\' + \
     filename.GetFileNameWithoutExtension(XMLPATH)+'.html'
