@@ -26,8 +26,7 @@ def main():
         ip_file.close()
     with open(output_file_path, "w") as op_file:
         op_file.write(doc.toprettyxml(indent="\t"))
-        op_file.close()
-        print("Successfully Generated {}".format(output_file_path))
+        print("Successfully Generated XML {}".format(output_file_path))
     with open(output_file_path) as op_file:
         line = op_file.readline()
         xml_str = ""
@@ -42,11 +41,9 @@ def main():
             else:
                 xml_str = xml_str.strip() + line
             line = op_file.readline()
-        op_file.close()
     with open(output_file_path, "w") as op_file:
         op_file.write(xml_str)
-        op_file.close()
-    print("Successfully Generated Formatted {}".format(output_file_path))
+    print("Successfully Generated Formatted XML {}".format(output_file_path))
 
 
 def setData(doc, node, data):
