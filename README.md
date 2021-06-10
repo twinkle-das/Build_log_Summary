@@ -22,5 +22,5 @@ XSLT [buildLogXSL.xsl](https://github.com/twinkle-das/Build_log_Summary/blob/mas
 `python <XML-python-file> <input-text-file> <output-xml-file>`
 
 ###### For HTML generation run:
-`python <XML-python-file> <xsl-file-name> <xml-file-name> <html-file-path>`
+`python <HTML-python-file> <xsl-file-name> <xml-file-name> <html-file-path>`
 
