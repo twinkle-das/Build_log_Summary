@@ -19,7 +19,7 @@ XSLT [buildLogXSL.xsl](https://github.com/twinkle-das/Build_log_Summary/blob/mas
 
 ## Run the following commands from the folder that contains the python files, to execute the project-
 ###### For XML generation run:
-`python <XML-python-file> <input-file> <output-xml-file>`
+`python <XML-python-file> <input-text-file> <output-xml-file>`
 
 ###### For HTML generation run:
 `python <XML-python-file> <xsl-file-name> <xml-file-name> <html-file-path>`
