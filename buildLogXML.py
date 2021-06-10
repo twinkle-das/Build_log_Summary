@@ -11,8 +11,6 @@ def main():
     doc = minidom.Document()
     root = doc.createElement("root")
     doc.appendChild(root)
-    pi = doc.createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="mystyle.xslt"')
-    doc.insertBefore(pi, root)
 
     with open(input_file_path) as ip_file:
         line = ip_file.readline()
@@ -23,7 +21,6 @@ def main():
                 setData(doc, child, data)
                 root.appendChild(child)
             line = ip_file.readline()
-        ip_file.close()
     with open(output_file_path, "w") as op_file:
         op_file.write(doc.toprettyxml(indent="\t"))
         print("Successfully Generated XML {}".format(output_file_path))
@@ -46,7 +43,7 @@ def main():
     print("Successfully Generated Formatted XML {}".format(output_file_path))
 
 
-def setData(doc, node, data):
+def setData(doc, node, data):   
     text_node = doc.createTextNode(data)
     node.appendChild(text_node)
 

@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Git-Checkout') {
+            steps{
+                git 'https://github.com/twinkle-das/Jenkins-Pipeline.git'
+            }
+        }
+        stage('XML-File') {
+            steps{
+                bat 'XmlBatchScript.bat buildLog.txt buildLogXML.xml'
+            }
+        }
+        
+        stage('HTML-File') {
+            steps {
+                bat 'HtmlBatchScript.bat buildLogXSL.xsl buildLogXML.xml ./'
+            }
+        }
+    }
+}
