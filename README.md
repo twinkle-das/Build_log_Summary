@@ -25,5 +25,5 @@ example: `python buildLogXML.py buildLog.txt buildLog.xml`
 ###### For HTML generation run:
 `python <HTML-python-file> <xsl-file-name> <xml-file-name> <html-file-path>`
 example: `python buildLogSummary.py buildLogXSL.xsl ./`
-*NOTE: Use ./ as `<html-file-path>` to generate the HTML file at the current directory.*
 
+*NOTE: Use ./ as `<html-file-path>` to generate the HTML file at the current directory.*
